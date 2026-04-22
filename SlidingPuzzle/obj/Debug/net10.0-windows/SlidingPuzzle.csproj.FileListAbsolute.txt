@@ -1,0 +1,17 @@
+C:\Users\berka\Desktop\Nesne_Odev\SlidingPuzzle\bin\Debug\net10.0-windows\SlidingPuzzle.exe
+C:\Users\berka\Desktop\Nesne_Odev\SlidingPuzzle\bin\Debug\net10.0-windows\SlidingPuzzle.dll
+C:\Users\berka\Desktop\Nesne_Odev\SlidingPuzzle\obj\Debug\net10.0-windows\SlidingPuzzle.Form1.resources
+C:\Users\berka\Desktop\Nesne_Odev\SlidingPuzzle\obj\Debug\net10.0-windows\SlidingPuzzle.Properties.Resources.resources
+C:\Users\berka\Desktop\Nesne_Odev\SlidingPuzzle\obj\Debug\net10.0-windows\SlidingPuzzle.csproj.GenerateResource.cache
+C:\Users\berka\Desktop\Nesne_Odev\SlidingPuzzle\obj\Debug\net10.0-windows\SlidingPuzzle.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\berka\Desktop\Nesne_Odev\SlidingPuzzle\obj\Debug\net10.0-windows\SlidingPuzzle.AssemblyInfoInputs.cache
+C:\Users\berka\Desktop\Nesne_Odev\SlidingPuzzle\obj\Debug\net10.0-windows\SlidingPuzzle.AssemblyInfo.cs
+C:\Users\berka\Desktop\Nesne_Odev\SlidingPuzzle\obj\Debug\net10.0-windows\SlidingPuzzle.csproj.CoreCompileInputs.cache
+C:\Users\berka\Desktop\Nesne_Odev\SlidingPuzzle\obj\Debug\net10.0-windows\SlidingPuzzle.dll
+C:\Users\berka\Desktop\Nesne_Odev\SlidingPuzzle\obj\Debug\net10.0-windows\refint\SlidingPuzzle.dll
+C:\Users\berka\Desktop\Nesne_Odev\SlidingPuzzle\obj\Debug\net10.0-windows\SlidingPuzzle.pdb
+C:\Users\berka\Desktop\Nesne_Odev\SlidingPuzzle\bin\Debug\net10.0-windows\SlidingPuzzle.deps.json
+C:\Users\berka\Desktop\Nesne_Odev\SlidingPuzzle\bin\Debug\net10.0-windows\SlidingPuzzle.runtimeconfig.json
+C:\Users\berka\Desktop\Nesne_Odev\SlidingPuzzle\bin\Debug\net10.0-windows\SlidingPuzzle.pdb
+C:\Users\berka\Desktop\Nesne_Odev\SlidingPuzzle\obj\Debug\net10.0-windows\SlidingPuzzle.genruntimeconfig.cache
+C:\Users\berka\Desktop\Nesne_Odev\SlidingPuzzle\obj\Debug\net10.0-windows\ref\SlidingPuzzle.dll
