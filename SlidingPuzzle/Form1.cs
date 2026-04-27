@@ -11,6 +11,7 @@ namespace SlidingPuzzle
 
         public const double PI = Math.PI;
 
+        public int size = 3;
         public Point[] pts;
         public PictureBox[] pictureBoxes;
         int emptyIndex = 8;
@@ -19,7 +20,7 @@ namespace SlidingPuzzle
         public int[] indexes = { 0, 1, 2, 3, 4, 5, 6, 7, 8 };
         public int index = 0;
         public string baseUrl;
-        
+
         bool isShuffling = false;
 
         int remainingTime = 60;
@@ -31,15 +32,8 @@ namespace SlidingPuzzle
         public Form1()
         {
             InitializeComponent();
-            pts = new Point[] { pictureBox0.Location, pictureBox1.Location, pictureBox2.Location, pictureBox3.Location, pictureBox4.Location, pictureBox5.Location, pictureBox6.Location, pictureBox7.Location, pictureBox8.Location };
 
-            Random a = new Random();
-            int randomNum = a.Next(1, 6);
-
-            baseUrl = Environment.CurrentDirectory + "\\..\\..\\..\\Images\\I" + randomNum.ToString() + ".jpeg";
-
-
-            SetUp();
+            FirstLoad();
         }
 
         #region Mouse Events
@@ -126,11 +120,11 @@ namespace SlidingPuzzle
 
                 CheckWin();
 
-                if(isShuffling)
+                if (isShuffling)
                     return;
 
 
-                if(remainingMoves <= 0)
+                if (remainingMoves <= 0)
                 {
                     EndGame(false);
                 }
@@ -160,6 +154,8 @@ namespace SlidingPuzzle
         {
             DialogResult a;
 
+            timer1.Stop();
+
             if (win)
             {
                 pictureBoxes[8].Image = emptyImage;
@@ -184,7 +180,7 @@ namespace SlidingPuzzle
                     {
                         c.Enabled = false;
 
-                        if (c is Button btn && btn == button1)
+                        if (c is Button btn && (btn == button1 || btn == button2))
                         {
                             c.Enabled = true;
                         }
@@ -194,7 +190,6 @@ namespace SlidingPuzzle
                     break;
             }
 
-            timer1.Stop();
         }
 
         void CutImage(string url)
@@ -263,7 +258,7 @@ namespace SlidingPuzzle
 
             remainingMoves = 50;
             countLabel.Text = remainingMoves.ToString();
-            
+
             CutImage(baseUrl);
             Shuffle();
 
@@ -271,6 +266,19 @@ namespace SlidingPuzzle
             timer1.Start();
         }
 
+        void FirstLoad()
+        {
+            pts = new Point[] { pictureBox0.Location, pictureBox1.Location, pictureBox2.Location, pictureBox3.Location, pictureBox4.Location, pictureBox5.Location, pictureBox6.Location, pictureBox7.Location, pictureBox8.Location };
+
+            baseUrl = Environment.CurrentDirectory + "\\..\\..\\..\\Images\\I" + new Random().Next(0, 23).ToString() + ".jpg";
+
+            for (int i = 0; i < size * size; i++)
+            {
+                indexes[i] = i;
+            }
+
+            SetUp();
+        }
 
 
         #endregion
@@ -304,6 +312,13 @@ namespace SlidingPuzzle
 
             TimeSpan time = TimeSpan.FromSeconds(remainingTime);
             timerLabel.Text = time.ToString(@"mm\:ss");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            baseUrl = Environment.CurrentDirectory + "\\..\\..\\..\\Images\\I" + new Random().Next(0, 23).ToString() + ".jpg";
+
+            SetUp();
         }
 
         enum Direction
