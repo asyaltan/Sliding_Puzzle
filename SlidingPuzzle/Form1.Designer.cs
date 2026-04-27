@@ -1,4 +1,4 @@
-﻿namespace SlidingPuzzle
+namespace SlidingPuzzle
 {
     partial class Form1
     {
@@ -46,6 +46,7 @@
             timerLabel = new Label();
             countLabel = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox0).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -195,7 +196,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(673, 409);
+            button1.Location = new Point(670, 421);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 1;
@@ -259,11 +260,22 @@
             timer1.Interval = 1000;
             timer1.Tick += timer1_Tick;
             // 
+            // button2
+            // 
+            button2.Location = new Point(670, 386);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 29);
+            button2.TabIndex = 3;
+            button2.Text = "Rastgele";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(809, 450);
+            ClientSize = new Size(809, 480);
+            Controls.Add(button2);
             Controls.Add(countLabel);
             Controls.Add(timerLabel);
             Controls.Add(label2);
@@ -310,5 +322,6 @@
         private Label timerLabel;
         private Label countLabel;
         private System.Windows.Forms.Timer timer1;
+        private Button button2;
     }
 }
